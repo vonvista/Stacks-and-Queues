@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div class="controls" style="align-items: baseline;margin:0px;"> 
+        <h1>Stacks and Queues Visualizer</h1>
+        <p>>>> github.com/VonVista</p>
+    </div>
+    <div id="controlPanel" class="controlsParent">
+        <div class="controls"> 
+            <input type="text" id="pushElement" placeholder="Input string to test"
+            class="input_field" style="background-color:#7e2929"></input>
+            <button onClick = handlePush() id="pushButton" style="background-color:#7e2929">Push</button>
+            <button onClick = handlePop() id="popButton" style="background-color:#7e2929">Pop</button>
+        </div>
+        <div class="controls"> 
+          <input type="text" id="queueElement" placeholder="Input string to test"
+          class="input_field" style="background-color:#797e29"></input>
+          <button onClick = handleQueue() id="queueButton" style="background-color:#797e29">Queue</button>
+          <button onClick = handleDequeue() id="dequeueButton" style="background-color:#797e29">Dequeue</button>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+    <div id="sketchHolder"></div>
+  </body>
+</html>
